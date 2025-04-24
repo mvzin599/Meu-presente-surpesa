@@ -1,0 +1,90 @@
+# <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para o Amor da Minha Vida</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff0f5;
+      color: #333;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .image-container {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    .image-container img {
+      max-width: 300px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .image-text {
+      position: absolute;
+      top: 10px;
+      width: 100%;
+      text-align: center;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      text-shadow: 1px 1px 3px black;
+    }
+
+    .message {
+      margin: 40px auto 20px;
+      max-width: 600px;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .contador {
+      margin-top: 30px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #b22222;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Imagem principal com texto sobreposto -->
+  <div class="image-container">
+    <img src="IMG-20250422-WA0137.jpg" alt="Minha branca linda" />
+    <div class="image-text">Te amo muito minha branca</div>
+  </div>
+
+  <!-- Outras imagens -->
+  <div class="image-container">
+    <img src="IMG_20250329_195025_292.webp" alt="Foto 2" />
+  </div>
+
+  <div class="image-container">
+    <img src="IMG_20250329_122455_724.webp" alt="Foto 3" />
+  </div>
+
+  <!-- Contador de dias -->
+  <div class="contador" id="contador"></div>
+
+  <!-- Mensagem de amor -->
+  <div class="message">
+    Você é a razão do meu sorriso todos os dias. Obrigado por existir, por me amar e por ser exatamente quem você é. Eu te amo infinitamente.
+  </div>
+
+  <script>
+    // Data que começaram a namorar
+    const dataInicio = new Date("2023-08-18");
+    const hoje = new Date();
+    const diffTempo = hoje - dataInicio;
+    const dias = Math.floor(diffTempo / (1000 * 60 * 60 * 24));
+    document.getElementById("contador").textContent = `Estamos juntos há ${dias} dias!`;
+  </script>
+</body>
+</html>
